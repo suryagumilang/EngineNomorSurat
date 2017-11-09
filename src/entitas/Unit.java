@@ -69,7 +69,6 @@ public class Unit {
                 System.out.println("Is Actived  = " + rs.getInt("is_actived"));// Jika ingin menampilkan statusnya
                 System.out.println("Nomor Urut  = " + rs.getInt("no_unit"));
                 System.out.println("---------------");
-                System.out.println("lalaland");
             }
         } catch (Exception e) {
             System.out.println(e);
