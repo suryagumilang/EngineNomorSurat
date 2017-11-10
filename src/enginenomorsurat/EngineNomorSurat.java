@@ -47,6 +47,7 @@ public class EngineNomorSurat {
 //        type.insert("SPP", "Surat Pemanggilan Pemeriksaan", 1);
 //        type.insert("SPR", "Surat Perintah", 1);
 type.select_all();
+//Ihla
     }
 
 }
