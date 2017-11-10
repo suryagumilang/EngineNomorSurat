@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package enginenomorsurat;
+package entitas;
 
 //Library untuk ambil data tanggal, bulan, tahun
 import java.util.Calendar;
@@ -12,7 +12,7 @@ import java.util.Calendar;
  *
  * @author Surya
  */
-public class CoreEngine {
+public class Penanggalan {
 
     int date, month, year;
 

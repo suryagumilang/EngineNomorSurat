@@ -5,6 +5,7 @@
  */
 package enginenomorsurat;
 
+import entitas.Penanggalan;
 import koneksidb.ConnectionDB;
 import koneksidb.cls_ConnectionDB;
 import entitas.*;
@@ -26,7 +27,7 @@ public class EngineNomorSurat {
         // TODO code application logic here
 
 //        Instansiasi objek kalender
-        CoreEngine kalender = new CoreEngine();
+        Penanggalan kalender = new Penanggalan();
         System.out.println("Tanggal sekarang    = " + kalender.curDate());
         System.out.println("Bulan sekarang      = " + kalender.curMonth());
         System.out.println("Tahun sekarang      = " + kalender.curYear());
@@ -40,7 +41,9 @@ public class EngineNomorSurat {
 //        unit.insertdata("PBU", "Panas Bumi", 1);
 //        unit.insertdata("KNE", "Konservasi Energi", 1);
 //        unit.insertdata("PNE", "Pengusahaan", 1);
-        unit.select_all();
+//        unit.select_all();
+//String id_unit, String new_id_unit, String nama_unit, int is_actived
+        unit.update("PNE", "PNX", "Pengusahaan", 1);
     }
 
 }
