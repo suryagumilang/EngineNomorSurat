@@ -34,9 +34,9 @@ public class Unit {
         try {
             query = "insert into tbl_unit(id_unit,nama_unit,is_actived) values (?,?,?)";
             ps = connection.prepareStatement(query);
-            ps.setString(1, id_unit);
-            ps.setString(2, nama_unit);
-            ps.setInt(3, is_actived);
+            ps.setString(1, id_unit);//Memasukkan id atau kode dari unit
+            ps.setString(2, nama_unit);//Memasukkan nama unit
+            ps.setInt(3, is_actived);//Memasukkan status unit saat ini
             System.out.println(ps);
             ps.executeUpdate();
         } catch (Exception e) {
